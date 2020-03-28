@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jennifer Mabey's Violin Studio &amp; Quartet</title>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div id="app">
+  <full-page :options="options" id="fullpage" ref="fullpage">
+
+<!--    Home    -->
+    <div class="section">
+      <div class="fullv">
+        <h3>Jennifer Mabey's Violin Studio</h3>
+        <div class="split">
+          <p>Awesome teacher, awesome students</p>
+          <div>Second section</div>
+        </div>
+      </div>
+    </div>
+
+<!--    About    -->
+    <div class="section">
+      <div class="fullv stagger-left">
+        <h3>About Me</h3>
+        <div class="split">
+          <div>
+            <p>My qualifications:</p>
+            <ul>
+              <li>Member of the <img src="img/sau.png" style="background-color: #363636;" /> Suzuki Association of Utah</li>
+            </ul>
+            <p><a href="https://suzukimusicutah.org/user-profile/jennifer.mabeygmail-com/">Here's my profile</a></p>
+          </div>
+
+          <div>section1</div>
+
+        </div>
+      </div>
+    </div>
+
+<!--    Events    -->
+    <div class="section">
+      <div class="fullv">
+        <h3>Events</h3>
+        <div class="split">
+
+          <div>
+            <iframe class="event-cal" src="https://calendar.google.com/calendar/embed?wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FDenver&amp;src=cjM3c2tlaHRyN3Vva2U5dDM3Ymk0bTh1amNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23B39DDB&amp;mode=AGENDA&amp;showTabs=0&amp;showCalendars=0&amp;showPrint=0&amp;showNav=0&amp;showTitle=0&amp;showDate=0" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div>Second section</div>
+        </div>
+      </div>
+    </div>
+
+<!--    Contact    -->
+    <div class="section">
+      <div style="height: 100%; display: flex; flex-direction: column;">
+        <div style="flex-grow: 1; display: grid; grid-template-columns: 50% 50%;">
+          <div>
+            <h3>Contact</h3>
+
+            <div>
+              Phone: <br/>
+              Email: <br/>
+            </div>
+          </div>
+          <div class="bg-img violin" style=""></div>
+        </div>
+      </div>
+    </div>
+
+  </full-page>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.min.js"></script>
+<script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
