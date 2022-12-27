@@ -1,0 +1,6 @@
+main#main div#home.container.section div.section-title { display: none; }
+
+section#hero { background-position-y: center; }
+section#hero h1 { display: none; }
+
+div.icon-box i { color: var(--icons-color); }
