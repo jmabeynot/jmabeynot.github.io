@@ -48,14 +48,18 @@ body {
   --bs-body-bg: #fbfcfd;
 }
 
-a {
+a, p>a.nav-link {
   color: var(--highlight);
   text-decoration: none;
 }
 
-a:hover {
+a:hover, p>a.nav-link:hover {
   color: var(--primary-theme-color-2);
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+a.nav-link.external {
+  display: unset;
 }
 
 h1 { font-family: var(--secondary-font-family); }
@@ -247,6 +251,7 @@ hr {
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #fff;
+  text-decoration: none;
 }
 
 #navbar.navbar>ul>li>ul {
@@ -693,9 +698,6 @@ section {
 
 .icon-box .icon {
   margin-bottom: 15px;
-}
-
-.icon-box .icon i {
   font-size: 48px;
   line-height: 1;
   color: var(--highlight);
@@ -728,10 +730,6 @@ section {
 
 .icon-box:hover .title,
 .icon-box:hover .description {
-  /*color: #fff;*/
-}
-
-.icon-box:hover .icon i {
   /*color: #fff;*/
 }
 
@@ -821,6 +819,7 @@ div.fixed-image {
   background: var(--secondary-2-theme-color-5);
   border: 2px solid var(--secondary-2-theme-color-3);
   color: #fff;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -1033,10 +1032,24 @@ div.fixed-image {
   left: -3px;
 }
 
-.pricing .box h4 span {
-  color: #bababa;
+.pricing .box .box-next-arrow {
+  position: absolute;
+  top: 40%;
+  right: 2px;
+  font-size: 40px;
+  color: var(--highlight);
+}
+
+.pricing .box h4 span,
+.pricing .box .pre-service {
+  color: #707070;
   font-size: 16px;
   font-weight: 300;
+}
+
+.pricing .box .pre-service {
+  font-style: italic;
+  font-size: larger;
 }
 
 .pricing .box ul {
@@ -1084,6 +1097,7 @@ div.fixed-image {
 .pricing .box .btn-buy:hover {
   background: var(--highlight);
   color: #fff;
+  text-decoration: none;
 }
 
 .pricing .recommended {
@@ -1100,13 +1114,17 @@ div.fixed-image {
   border-color: var(--primary-theme-color-1);;
 }
 
-.pricing .recommended-badge {
+.pricing .recommended-badge,
+.pricing .box .pre-service {
   position: absolute;
-  top: 5px;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  font-size: 13px;
+}
+
+.pricing .recommended-badge {
+  font-size: 14px;
   padding: 3px 25px 6px 25px;
   background: var(--primary-theme-color-1);
   color: var(--primary-theme-color-5);
@@ -2189,7 +2207,7 @@ div.fixed-image {
   display: unset;
 }
 
-.list-group .list-group-item div.icon i {
+.list-group .list-group-item div.icon {
   font-size: 36px;
   color: var(--secondary-2-theme-color-5);
 }
@@ -2201,6 +2219,10 @@ div.fixed-image {
 
 .list-group .list-group-item a {
   color: unset;
+}
+
+.list-group .list-group-item a:hover {
+  text-decoration: none;
 }
 
 em {
