@@ -6,7 +6,7 @@ Home
 
 .. bs-carousel::
    :id: carousel-of-distress
-   :class: float-end col-sm-4
+   :class: float-end col-12 col-sm-4
    :image-dir: _static/img/
    :images: distressed-1.jpg distressed-2.webp distressed-3.jpg distressed-4.webp distressed-5.jpg distressed-6.jpg
 
@@ -81,7 +81,7 @@ Services & Fees
    :class: pricing
 
    .. bs-col::
-      :class: col-lg-3 col-md-6 align-items d-flex
+      :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
          :service: 10-minute Phone Consultation
@@ -94,7 +94,7 @@ Services & Fees
          :add-next-arrow:
 
    .. bs-col::
-      :class: col-lg-3 col-md-6 align-items d-flex
+      :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
          :service: 60-minute Online Initial Session
@@ -105,7 +105,7 @@ Services & Fees
          We will get to know each other and identify your goals for therapy.
 
    .. bs-col::
-      :class: col-lg-3 col-md-6 align-items d-flex
+      :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
          :service-pre: Subsequent
@@ -118,7 +118,7 @@ Services & Fees
          This is the kind of session we will have regularly.
 
    .. bs-col::
-      :class: col-lg-3 col-md-6 align-items d-flex
+      :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
          :class: py-auto
@@ -137,8 +137,8 @@ Services & Fees
       Contact your insurance company and ask about potential reimbursement rates and procedures if you are interested.
       Please let me know if you are interested in receiving a Superbill for reimbursement purposes.
 
-      For more information on why I don’t work with insurance and how this benefits YOU, see
-      https://www.huppicounseling.com/servicesfees-1
+      For more information on why I don’t work with insurance and how this benefits YOU, see `this great explanation.
+      <https://www.huppicounseling.com/servicesfees-1>`_
 
 
    .. admonition:: Cancellation Fees
@@ -248,7 +248,7 @@ About Jen
 .. figure:: _static/img/portrait.jpeg
    :width: 100%
    :class: figure-img img-fluid rounded
-   :figclass: figure col-lg-3 col-sm-6 float-start
+   :figclass: figure col-lg-3 col-4 float-start
 
    Jen Mabey, CMHC
 

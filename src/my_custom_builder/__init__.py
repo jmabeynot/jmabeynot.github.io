@@ -512,7 +512,7 @@ class ListGroupItemDirective(MyDirective):
     final_argument_whitespace = True
 
     def run(self):
-        item = div(CLASS="list-group-item list-group-item-action py-3 d-flex gap-3")
+        item = div(CLASS="list-group-item list-group-item-action py-3 d-flex")
         children = []
 
         if icon_class := self.options.get("icon-class"):
