@@ -8,13 +8,13 @@ Home
    :id: carousel-of-distress
    :class: float-end col-sm-4
    :image-dir: _static/img/
-   :images: distressed-1.jpg distressed-2.jpg distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg distressed-7.jpg distressed-8.jpg
+   :images: distressed-1.jpg distressed-2.webp distressed-3.jpg distressed-4.webp distressed-5.jpg distressed-6.jpg
 
 As a healthcare provider, you are gifted at recognizing and nurturing the needs of others, but may struggle to
 identify and address your own mental health needs.
 
 You long to feel balanced, in control of your emotions, confident about life and secure in your relationships.
-Instead *depression*, *anxiety* and *family of origin issues* have left you
+Instead *depression*, *anxiety* and *family of origin issues* have left you:
 
 - Distressed and distracted by intrusive thoughts and painful memories that interfere with work and relationships.
 - Depleted and irritable from the struggle to set healthy boundaries.
@@ -36,7 +36,7 @@ damaging to yourself.
 Here you are accepted and respected for who you are and have a safe place to be open about your true feelings, free
 from the fear of judgment.
 
-As I guide and support you on your journey of learning and empowerment, you will
+As I guide and support you on your journey of learning and empowerment, you will:
 
 #. Uncover the root causes of your misery and struggles.
 #. Grow in understanding of your emotions and develop skills to regulate them.
@@ -58,7 +58,7 @@ How to Begin
       :icon-class: bx bx-phone
       :href: #contact-me
 
-      *Click here* to schedule a free 15 minute phone call with me so we can discuss your therapy goals and decide if we
+      *Click here* to schedule a free 10 minute phone call with me so we can discuss your therapy goals and decide if we
       want to work together.
 
    .. list-group-item:: Step 2. *Share*
@@ -84,30 +84,38 @@ Services & Fees
       :class: col-lg-3 col-md-6 align-items d-flex
 
       .. bs-box::
-         :service: 10-minute phone consultation
+         :service: 10-minute Phone Consultation
          :badge: Start Here
          :free:
          :btn-text: Get Started
          :btn-href: #contact-me
          :recommended:
          :class: py-auto
+         :add-next-arrow:
 
    .. bs-col::
       :class: col-lg-3 col-md-6 align-items d-flex
 
       .. bs-box::
-         :service: 60-minute initial session
+         :service: 60-minute Online Initial Session
          :price: 125
          :class: py-auto
+         :add-next-arrow:
+
+         We will get to know each other and identify your goals for therapy.
 
    .. bs-col::
       :class: col-lg-3 col-md-6 align-items d-flex
 
       .. bs-box::
-         :service: Subsequent 50-minute therapy sessions
+         :service-pre: Subsequent
+         :service: 50-minute Online Therapy Sessions
          :price: 125
          :per: session
          :class: py-auto
+         :add-repeat-arrow:
+
+         This is the kind of session we will have regularly.
 
    .. bs-col::
       :class: col-lg-3 col-md-6 align-items d-flex
@@ -165,12 +173,10 @@ Therapy Process
 .. div::
    :class: clearfix
 
-   .. bs-carousel::
-      :id: carousel-of-conference
-      :class: float-start col-sm-3
-      :image-dir: _static/img/
-      :images: conference-calling-1.jpg conference-calling-2.jpg conference-calling-3.jpg conference-calling-4.webp conference-calling-5.webp conference-calling-6.jpg
-
+   .. figure:: _static/img/video-call-1.jpg
+      :width: 100%
+      :class: figure-img img-fluid rounded
+      :figclass: figure col-6 col-md-4 col-lg-3 float-start
 
    When it comes to therapy, there is no “one size fits all” approach. I am trained in several therapeutic approaches,
    so we have options as we figure out what works best for you.

@@ -7,3 +7,4 @@ build/html/search.html
 build/html/searchindex.js
 __pycache__
 build
+*.swp

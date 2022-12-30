@@ -15,7 +15,7 @@ the bill for medical items and services.
   Faith Estimate before you schedule an item or service.
 - If you receive a bill that is at least $400 more than your Good Faith Estimate, you can dispute the bill.
 - Make sure to save a copy or picture of your Good Faith Estimate. For questions or more information about your right
-  to a Good Faith Estimate, visit www.cms.gov/nosurprises or call 800-985-3059.
+  to a Good Faith Estimate, visit https://www.cms.gov/nosurprises or call 800-985-3059.
 
 *Your Good Faith Estimate will be included with the other intake forms provided after the phone consultation, and will*
 *be consistent with the information on this website.*

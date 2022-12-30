@@ -168,14 +168,29 @@ class bs_icon(Element):
 
 
 def visit_icon_node(self, node):
-    self.body.append(self.starttag(node, "div", CLASS="icon"))
+    node["class"] += " icon"
+    self.body.append(self.starttag(node, "div", **dump_attrs(node)))
     self.context.append("</div>\n")
-
-    self.body.append(self.starttag(node, "i", CLASS=node.get("class", "")))
-    self.context.append("</i>\n")
 
 
 def depart_icon_node(self, node):
+    self.body.append(self.context.pop())
+
+
+# noinspection PyPep8Naming
+class bs_icon_w_i(Element):
+    pass
+
+
+def visit_icon_w_i_node(self, node):
+    self.body.append(self.starttag(node, "div", CLASS="icon"))
+    self.context.append("</div>\n")
+
+    self.body.append(self.starttag(node, "i", **dump_attrs(node)))
+    self.context.append("</i>\n")
+
+
+def depart_icon_w_i_node(self, node):
     self.body.append(self.context.pop())
     self.body.append(self.context.pop())
 
@@ -400,12 +415,15 @@ class BoxDirective(MyDirective):
         "class": str,
         "recommended": directives.flag,
         "badge": str,
+        "service-pre": str,
         "service": str,
         "free": directives.flag,
         "price": directives.nonnegative_int,
         "per": str,
         "btn-text": str,
         "btn-href": str,
+        "add-next-arrow": directives.flag,
+        "add-repeat-arrow": directives.flag,
     }
 
     def run(self):
@@ -414,10 +432,17 @@ class BoxDirective(MyDirective):
             box_class += " recommended"
         box = div(CLASS=box_class)
 
+        if "add-next-arrow" in self.options:
+            box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-right-circle"))
+
+        if "add-repeat-arrow" in self.options:
+            box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-repeat"))
+
         if badge_text := self.options.get("badge"):
-            self._add_parsed_text(
-                badge_text, box, new_node_type=span, classes=["recommended-badge"]
-            )
+            self._add_parsed_text(badge_text, box, classes=["recommended-badge"])
+
+        if srv_pre_text := self.options.get("service-pre", ""):
+            self._add_parsed_text(srv_pre_text, box, classes=["pre-service"])
 
         service_text = self.options.get("service")
         assert service_text, "Box directive must have a service"
@@ -588,9 +613,7 @@ class AccordianItemDirective(MyDirective):
     def run(self):
         assert self.arguments
         item = nodes.list_item()
-        item_id = (
-            f"accordion-item-{self.state.document.settings.env.new_serialno('todo'):d}"
-        )
+        item_id = f"accordion-item-{self.state.document.settings.env.new_serialno('accordion'):d}"
         title_div = div(
             CLASS="accordion-item collapsed",
             **{
@@ -601,8 +624,8 @@ class AccordianItemDirective(MyDirective):
         )
         title_div.extend(
             [
-                bs_icon(CLASS="bi bi-chevron-down icon-show"),
-                bs_icon(CLASS="bi bi-chevron-up icon-close"),
+                bs_icon_w_i(CLASS="bi bi-chevron-down icon-show"),
+                bs_icon_w_i(CLASS="bi bi-chevron-up icon-close"),
                 Text((" ".join(self.arguments)).strip()),
             ]
         )
@@ -668,6 +691,7 @@ def setup(app: Sphinx):
     # Icon Box directive
     app.add_node(bs_icon_box, html=(visit_icon_box_node, depart_icon_box_node))
     app.add_node(bs_icon, html=(visit_icon_node, depart_icon_node))
+    app.add_node(bs_icon_w_i, html=(visit_icon_w_i_node, depart_icon_w_i_node))
     app.add_node(
         bs_icon_box_subtitle,
         html=(visit_icon_box_subtitle_node, depart_icon_box_subtitle_node),
