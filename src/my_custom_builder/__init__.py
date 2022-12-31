@@ -422,7 +422,9 @@ class BoxDirective(MyDirective):
         "per": str,
         "btn-text": str,
         "btn-href": str,
-        "add-next-arrow": directives.flag,
+        "next-arrow-xs": str,
+        "next-arrow-sm": str,
+        "next-arrow-lg": str,
         "add-repeat-arrow": directives.flag,
     }
 
@@ -432,8 +434,14 @@ class BoxDirective(MyDirective):
             box_class += " recommended"
         box = div(CLASS=box_class)
 
-        if "add-next-arrow" in self.options:
-            box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-right-circle"))
+        if next_arrow_cls := self.options.get("next-arrow-xs", "").strip():
+            box.append(bs_icon(CLASS=f"box-next-arrow box-next-xs {next_arrow_cls}"))
+
+        if next_arrow_sm_cls := self.options.get("next-arrow-sm", "").strip():
+            box.append(bs_icon(CLASS=f"box-next-arrow box-next-sm {next_arrow_sm_cls}"))
+
+        if next_arrow_lg_cls := self.options.get("next-arrow-lg", "").strip():
+            box.append(bs_icon(CLASS=f"box-next-arrow box-next-lg {next_arrow_lg_cls}"))
 
         if "add-repeat-arrow" in self.options:
             box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-repeat"))

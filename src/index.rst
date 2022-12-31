@@ -8,7 +8,7 @@ Home
    :id: carousel-of-distress
    :class: float-end col-12 col-sm-4
    :image-dir: _static/img/
-   :images: distressed-1.jpg distressed-2.webp distressed-3.jpg distressed-4.webp distressed-5.jpg distressed-6.jpg
+   :images: distressed-1.jpg distressed-2.webp distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg
 
 As a healthcare provider, you are gifted at recognizing and nurturing the needs of others, but may struggle to
 identify and address your own mental health needs.
@@ -91,7 +91,9 @@ Services & Fees
          :btn-href: #contact-me
          :recommended:
          :class: py-auto
-         :add-next-arrow:
+         :next-arrow-xs: bi bi-arrow-down-circle
+         :next-arrow-sm: bi bi-arrow-right-circle
+         :next-arrow-lg: bi bi-arrow-right-circle
 
    .. bs-col::
       :class: col-lg-3 col-sm-6 align-items d-flex
@@ -100,7 +102,9 @@ Services & Fees
          :service: 60-minute Online Initial Session
          :price: 125
          :class: py-auto
-         :add-next-arrow:
+         :next-arrow-xs: bi bi-arrow-down-circle
+         :next-arrow-sm: bi bi-arrow-down-left-circle
+         :next-arrow-lg: bi bi-arrow-right-circle
 
          We will get to know each other and identify your goals for therapy.
 
@@ -285,6 +289,11 @@ Contact Me
 
 .. raw:: html
    :file: calendly_snippet.html
+
+.. figure:: _static/img/group.webp
+   :width: 100%
+   :class: figure-img img-fluid rounded
+   :figclass: figure col-12
 
 
 .. toctree::

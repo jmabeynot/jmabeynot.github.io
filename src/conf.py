@@ -19,7 +19,7 @@ html_theme_options = {
     "project_subtitle": "Online Therapy for Healthcare Providers",
     # "catchphrase": "Live The Life You Choose Through Healing & Empowerment",
     "hero_button_text": "Get Started",
-    "hero_href": "#contact-me",
+    "hero_href": "#how-to-begin",
     "author": "Jen Mabey, CMHC",
 }
 

@@ -1040,6 +1040,36 @@ div.fixed-image {
   color: var(--highlight);
 }
 
+@media (max-width: 576px) {
+  .pricing .box .box-next-arrow.box-next-xs {
+    display: block!important;
+  }
+  .pricing .box .box-next-arrow.box-next-sm,
+  .pricing .box .box-next-arrow.box-next-lg {
+    display: none!important;
+  }
+}
+
+@media (min-width: 576px) {
+  .pricing .box .box-next-arrow.box-next-sm {
+    display: block!important;
+  }
+  .pricing .box .box-next-arrow.box-next-xs,
+  .pricing .box .box-next-arrow.box-next-lg {
+    display: none!important;
+  }
+}
+
+@media (min-width: 992px) {
+  .pricing .box .box-next-arrow.box-next-lg {
+    display: block!important;
+  }
+  .pricing .box .box-next-arrow.box-next-xs,
+  .pricing .box .box-next-arrow.box-next-sm {
+    display: none!important;
+  }
+}
+
 .pricing .box h4 span,
 .pricing .box .pre-service {
   color: #707070;
