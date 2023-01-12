@@ -8,7 +8,7 @@ Home
    :id: carousel-of-distress
    :class: float-end col-12 col-sm-4
    :image-dir: _static/img/
-   :images: distressed-1.jpg distressed-2.webp distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg
+   :images: distressed-1.jpg distressed-2.jpg distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg
 
 As a healthcare provider, you are gifted at recognizing and nurturing the needs of others, but may struggle to
 identify and address your own mental health needs.
@@ -177,7 +177,7 @@ Therapy Process
 .. div::
    :class: clearfix
 
-   .. figure:: _static/img/video-call-1.jpg
+   .. figure:: _static/img/video-call.jpg
       :width: 100%
       :class: figure-img img-fluid rounded
       :figclass: figure col-6 col-md-4 col-lg-3 float-start
@@ -290,7 +290,7 @@ Contact Me
 .. raw:: html
    :file: calendly_snippet.html
 
-.. figure:: _static/img/group.webp
+.. figure:: _static/img/group.jpg
    :width: 100%
    :class: figure-img img-fluid rounded
    :figclass: figure col-12

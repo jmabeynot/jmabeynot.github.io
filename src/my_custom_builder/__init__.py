@@ -30,7 +30,7 @@ class HTMLTranslator(HTML5Translator):
                 style=(
                     "background: linear-gradient(rgba(2, 2, 2, 0.5), "
                     "rgba(0, 0, 0, 0.8)), url(_static/img/how-to-begin.jpg) "
-                    "center center fixed;"
+                    "center center fixed; background-size: cover;"
                 ),
             )
         )
