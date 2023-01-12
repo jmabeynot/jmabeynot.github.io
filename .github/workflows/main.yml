@@ -1,0 +1,63 @@
+name: Build latest and publish
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out main branch
+        uses: actions/checkout@v3
+        with:
+          ref: "main"
+
+      - name: Install Python and Poetry
+        uses: ITProKyle/action-setup-python@v0.1.0
+        with:
+          python-version: "3.10"
+
+      - name: Set up poetry virtualenv and build pages
+        env:
+          SPHINXOPTS: "-W"  # Turns all warnings into errors
+        run: |
+            poetry install
+            poetry run make html
+            rm -rf build/doctrees build/html/{.buildinfo,good_faith_estimate.html,objects.inv,search.html,searchindex.js}
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site_files
+          path: build/html/
+
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out public branch
+        uses: actions/checkout@v3
+        with:
+          ref: "public"
+
+      - name: Remove old files
+        run: git rm -rf _images _static index.html
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: site_files
+          path: .
+
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: Commit new files
+        run: |
+          git add .
+          git commit -m "Auto deploy `date -Idate`"
+          git push

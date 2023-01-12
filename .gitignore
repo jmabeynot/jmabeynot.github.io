@@ -1,10 +1,5 @@
-.idea
+*.swp
 .DS_Store
-build/doctrees
-build/html/.buildinfo
-build/html/objects.inv
-build/html/search.html
-build/html/searchindex.js
+.idea
 __pycache__
 build
-*.swp
