@@ -1,7 +1,7 @@
 Home
 ----
 
-.. tagline:: You help others. It’s time to get the help you need and deserve.
+.. tagline:: You're good at helping others. It’s time to get good help you for yourself!
 
 
 .. bs-carousel::
@@ -10,38 +10,25 @@ Home
    :image-dir: _static/img/
    :images: distressed-1.jpg distressed-2.jpg distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg
 
-As a healthcare provider, you are gifted at recognizing and nurturing the needs of others, but may struggle to
-identify and address your own mental health needs.
+You are gifted at recognizing and nurturing the needs of others, but tend to let your own needs go by the wayside.
 
-You long to feel balanced, in control of your emotions, confident about life and secure in your relationships.
-Instead *depression*, *anxiety* and *family of origin issues* have left you:
+You would love to feel balanced, in control of your emotions, confident about life and secure in your relationships.
+Instead *depression*, *anxiety* or *family of origin issues* have left you struggling to:
 
-- Distressed and distracted by intrusive thoughts and painful memories that interfere with work and relationships.
-- Depleted and irritable from the struggle to set healthy boundaries.
-- Increasingly anxious and despondent as the strategies you use to regulate your emotions fail to help you feel better.
+- Maintain healthy relationships at home and work.
+- Set healthy boundaries.
+- Regulate your emotions.
 
-Without experienced support to help you work through them, these challenges will only continue to interfere with your
-work, interpersonal relationships and personal happiness.
+The right support can make all the difference as you work to change patterns and behavior.  
 
-Please know you are not alone and healing is possible.
 
 .. bs-cta:: Schedule a *FREE* phone consultation
    :href: #contact-me
 
 |
 
-At Mend Mental Health Therapy, I am passionate about enabling healthcare providers like you to serve others in a way that isn’t
-damaging to yourself.
+Mend Mental Health Therapy is where you, who spend so much of your life focused on serving others, can focus on your own well-being.  Making sure your needs are met will help you continue to serve others from a place of strength instead of depletion.  Healing is possible!
 
-Here you are accepted and respected for who you are and have a safe place to be open about your true feelings, free
-from the fear of judgment.
-
-As I guide and support you on your journey of learning and empowerment, you will:
-
-#. Uncover the root causes of your misery and struggles.
-#. Grow in understanding of your emotions and develop skills to regulate them.
-#. Shift negative thought patterns into positive, goal-oriented thinking.
-#. Process painful past experiences so they no longer continue to wound.
 
 |
 
@@ -65,7 +52,7 @@ How to Begin
       :icon-class: bx bx-donate-heart
 
       Once you decide to move forward with therapy, we’ll schedule an initial 60 minute session where I can learn
-      more about you and your struggles. Together we’ll create a plan to help you reach your goals.
+      more about you. Together we’ll create a plan to help you reach your goals.
 
    .. list-group-item:: Step 3. *Heal*
       :icon-class: bx bx-leaf
@@ -99,7 +86,7 @@ Services & Fees
       :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
-         :service: 60-minute Online Initial Session
+         :service: 60-minute Initial Video Session
          :price: 125
          :class: py-auto
          :next-arrow-xs: bi bi-arrow-down-circle
@@ -113,7 +100,7 @@ Services & Fees
 
       .. bs-box::
          :service-pre: Subsequent
-         :service: 50-minute Online Therapy Sessions
+         :service: 50-minute TeleHealth Therapy Sessions
          :price: 125
          :per: session
          :class: py-auto
@@ -126,9 +113,9 @@ Services & Fees
 
       .. bs-box::
          :class: py-auto
-         :service: Payment methods accepted
+         :service: Payment methods accepted:
 
-         I accept all debit/credit, and HSA cards. Your payment method of choice will be kept on file, and your card
+         Debit/Credit and HSA cards. Your payment method of choice will be kept on file, and your card
          will be charged after each session. All payments are due in full at the time of service.
 
 
@@ -137,9 +124,9 @@ Services & Fees
    .. admonition:: Please Note
       :class: alert alert-info col-lg-5 mx-lg-auto col-md-12 mx-md-0
 
-      I do not bill insurance directly. Your insurance may include out-of-network benefits, which may reimburse you.
-      Contact your insurance company and ask about potential reimbursement rates and procedures if you are interested.
-      Please let me know if you are interested in receiving a Superbill for reimbursement purposes.
+      I do not bill insurance. (This actually benefits you.  Ask me for details!) Some insurance companies accept my services as an out-of-network benefit.
+      Contact your insurance company for procedures if you are interested in reimbursement.
+      Please let me know if you need a Superbill for reimbursement purposes.
 
       For more information on why I don’t work with insurance and how this benefits YOU, see `this great explanation.
       <https://www.huppicounseling.com/servicesfees-1>`_
@@ -182,8 +169,7 @@ Therapy Process
       :class: figure-img img-fluid rounded
       :figclass: figure col-6 col-md-4 col-lg-3 float-start
 
-   When it comes to therapy, there is no “one size fits all” approach. I am trained in several therapeutic approaches,
-   so we have options as we figure out what works best for you.
+   When it comes to therapy, there is no “one size fits all” approach.  I am trained in several therapeutic modalities, and we will work together to discover your best path forward.  As your partner in healing, I will be flexible and the path will be tailored to your needs
 
 
 Approaches
@@ -257,20 +243,11 @@ About Jen
    Jen Mabey, CMHC
 
 
-I am licensed in the State of Utah as a Clinical Mental Health Counselor (CMHC). I earned a M.Ed. in Educational
-Psychology/Clinical Mental Health Counseling from the University of Utah. I chose that route to becoming a therapist
-because it offered the most focused coursework on providing individual therapy to adults, which is the kind of
-therapy I wanted to practice.
+I am licensed in the State of Utah as a Clinical Mental Health Counselor (CMHC). I graduated from the University of Utah with a Master’s Degree in Educational Psychology/Clinical Mental Health Counseling.
 
-During school, I studied research about the impact of having parents who were focused
-on achievement that would reflect well on the parent or were focused on something else due to illness, addiction,
-narcissism, etc., and learned that these children often later chose careers in healthcare and other helping
-professions. These backgrounds honed their ability to tune in to what others expected and needed, but often did not
-nurture their ability to tune in to what they themselves needed. I enjoy connecting with and supporting this
-population, helping them to build skills and insight, process painful experiences, and be better prepared to lead the
-life they desire.
+I am fascinated by research showing that when parents struggle with illness, addiction, or narcissism, or expect their children’s achievements to make them look good, their children often later choose careers in healthcare and other helping professions.  It turns out such family-of-origin experiences hone one’s ability to tune into what others expect and need, but often such talented caregivers haven’t learned to tune into what they themselves need.  I enjoy connecting with and supporting those in helping professions to build skills and insight, process painful experiences, and be better prepared to lead the life they desire.
 
-When I’m not in the therapy chair, I teach people how to play the violin, renovate and landscape my old house, try to
+When I’m not in my therapy office, I teach people how to play the violin, renovate and landscape my old house, try to
 train my dog to behave himself, and enjoy spending time with my family and friends.
 
 
