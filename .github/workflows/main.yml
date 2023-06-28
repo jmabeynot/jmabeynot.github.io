@@ -1,6 +1,7 @@
 name: Build latest and publish
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
 
@@ -15,7 +16,7 @@ jobs:
           ref: "main"
 
       - name: Install Python and Poetry
-        uses: ITProKyle/action-setup-python@v0.1.0
+        uses: ITProKyle/action-setup-python@v0.3.0
         with:
           python-version: "3.10"
 
@@ -34,6 +35,7 @@ jobs:
 
 
   publish:
+    if: github.ref_name == 'main'
     needs: build
     runs-on: ubuntu-latest
 
