@@ -12,11 +12,9 @@ jobs:
     steps:
       - name: Check out main branch
         uses: actions/checkout@v3
-        with:
-          ref: "main"
 
       - name: Install Python and Poetry
-        uses: ITProKyle/action-setup-python@v0.3.0
+        uses: mmabey/action-setup-python@v0.3.1
         with:
           python-version: "3.10"
 
@@ -24,7 +22,7 @@ jobs:
         env:
           SPHINXOPTS: "-W"  # Turns all warnings into errors
         run: |
-            poetry install
+            poetry install --without dev
             poetry run make html
             rm -rf build/doctrees build/html/{.buildinfo,good_faith_estimate.html,objects.inv,search.html,searchindex.js}
 
