@@ -1,7 +1,7 @@
 Home
 ----
 
-.. tagline:: You're good at helping others. It’s time to get good help you for yourself!
+.. tagline:: You're good at helping others. It’s time to get good help for yourself!
 
 
 .. bs-carousel::
@@ -203,7 +203,7 @@ Approaches
 
       Your thoughts are not your boss.
       Develop a new relationship with and take control of your thoughts
-      as you learn to notice, detach from and evaluate them.
+      as you learn to notice, detach from, and evaluate thoughts.
 
 
    .. bs-icon-box:: LI
