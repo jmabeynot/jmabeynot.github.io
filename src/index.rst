@@ -1,7 +1,10 @@
 Home
 ----
 
-
+.. meta::
+   :description: Mend MHT provides many different therapy modalities, including EMDR, Mindful Self-Compassion,
+      Acceptance and Commitment Therapy (ACT), Lifespan Integration (LI), and Mind-Body Bridging. Schedule a free
+      15-minute video consultation to get started.
 
 
 .. bs-carousel::
@@ -19,7 +22,7 @@ Instead *depression*, *anxiety*, *trauma* or *family of origin issues* have left
 - Set healthy boundaries.
 - Regulate your emotions.
 
-The right support can make all the difference as you work to change patterns and behavior.  
+The right support can make all the difference as you work to change patterns and behavior.
 
 
 .. bs-cta:: Schedule a *FREE* video consultation
@@ -27,7 +30,9 @@ The right support can make all the difference as you work to change patterns and
 
 |
 
-Mend Mental Health Therapy is where you, who spend so much of your life focused on serving others, can focus on your own well-being.  Making sure your needs are met will help you continue to serve others from a place of strength instead of depletion.  Healing is possible!
+Mend Mental Health Therapy is where you, who spend so much of your life focused on serving others, can focus on your
+own well-being.  Making sure your needs are met will help you continue to serve others from a place of strength
+instead of depletion.  Healing is possible!
 
 
 |
@@ -45,14 +50,14 @@ How to Begin
       :icon-class: bx bx-phone
       :href: #contact-me
 
-      *Click here* to schedule a free 15 minute video consultation with me so we can discuss your therapy goals and decide if we
-      want to work together.
+      *Click here* to schedule a free 15 minute video consultation with me so we can discuss your therapy goals and
+      decide if we want to work together.
 
    .. list-group-item:: Step 2. *Share*
       :icon-class: bx bx-donate-heart
 
-      We’ll next schedule an initial 60 minute session where I can learn
-      more about you. Together we’ll create a plan to help you reach your goals. Sessions are held in the Salt Lake City office and online.
+      We’ll next schedule an initial 60 minute session where I can learn more about you. Together we’ll create a plan
+      to help you reach your goals. Sessions are held in the Salt Lake City office and online.
 
    .. list-group-item:: Step 3. *Heal*
       :icon-class: bx bx-leaf
@@ -124,9 +129,9 @@ Services & Fees
    .. admonition:: Please Note
       :class: alert alert-info col-lg-5 mx-lg-auto col-md-12 mx-md-0
 
-      I do not bill insurance. (This actually benefits you.  Ask me for details!) Many insurance companies accept my services as an out-of-network benefit. Your insurance company can clarify your benefits and their reimbursement procedures if you're interested in reimbursement. 
-      
-      
+      I do not bill insurance. (This actually benefits you.  Ask me for details!) Many insurance companies accept my
+      services as an out-of-network benefit. Your insurance company can clarify your benefits and their reimbursement
+      procedures if you're interested in reimbursement.
 
       For more information on why I don’t work with insurance and how this benefits YOU, see `this great explanation.
       <https://www.huppicounseling.com/servicesfees-1>`_
@@ -169,7 +174,9 @@ Therapy Process
       :class: figure-img img-fluid rounded
       :figclass: figure col-6 col-md-4 col-lg-3 float-start
 
-   When it comes to therapy, there is no “one size fits all” approach.  I am trained in several therapeutic modalities, and we will work together to discover your best path forward.  As your partner in healing, I will be flexible and the path will be tailored to your needs
+   When it comes to therapy, there is no “one size fits all” approach.  I am trained in several therapeutic
+   modalities, and we will work together to discover your best path forward.  As your partner in healing, I will be
+   flexible and the path will be tailored to your needs.
 
 
 Approaches
@@ -243,9 +250,16 @@ About Jen
    Jen Mabey, CMHC
 
 
-I am licensed in the State of Utah (License # 11283706-6004) as a Clinical Mental Health Counselor (CMHC). I graduated from the University of Utah with a Master’s Degree in Educational Psychology/Clinical Mental Health Counseling.
+I am licensed in the State of Utah (License # 11283706-6004) as a Clinical Mental Health Counselor (CMHC). I
+graduated from the University of Utah with a Master’s Degree in Educational Psychology/Clinical Mental Health
+Counseling.
 
-I am fascinated by research showing that when parents struggle with illness, addiction, or narcissism, or expect their children’s achievements to make them look good, their children often later choose careers in healthcare and other helping professions.  It turns out such family-of-origin experiences hone one’s ability to tune into what others expect and need, but often such talented caregivers haven’t learned to tune into what they themselves need.  I enjoy connecting with and supporting those in helping professions to build skills and insight, process painful experiences, and be better prepared to lead the life they desire.
+I am fascinated by research showing that when parents struggle with illness, addiction, or narcissism, or expect
+their children’s achievements to make them look good, their children often later choose careers in healthcare and
+other helping professions.  It turns out such family-of-origin experiences hone one’s ability to tune into what
+others expect and need, but often such talented caregivers haven’t learned to tune into what they themselves need.  I
+enjoy connecting with and supporting those in helping professions to build skills and insight, process painful
+experiences, and be better prepared to lead the life they desire.
 
 When I’m not in my therapy office, I teach people how to play the violin, renovate and landscape my old house, try to
 train my dog to behave himself, and enjoy spending time with my family and friends.
