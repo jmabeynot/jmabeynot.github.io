@@ -16,7 +16,7 @@ copyright = "2022-Present, Jen Mabey"
 author = "Jen Mabey"
 
 html_theme_options = {
-    "project_subtitle": "Online Therapy for Healthcare Providers",
+    "project_subtitle": "You're good at helping others. It’s time to get good help for yourself!",
     # "catchphrase": "Live The Life You Choose Through Healing & Empowerment",
     "hero_button_text": "Get Started",
     "hero_href": "#how-to-begin",
