@@ -1,7 +1,7 @@
 Home
 ----
 
-.. tagline:: You're good at helping others. It’s time to get good help for yourself!
+
 
 
 .. bs-carousel::
@@ -13,7 +13,7 @@ Home
 You are gifted at recognizing and nurturing the needs of others, but tend to let your own needs go by the wayside.
 
 You would love to feel balanced, in control of your emotions, confident about life and secure in your relationships.
-Instead *depression*, *anxiety* or *family of origin issues* have left you struggling to:
+Instead *depression*, *anxiety*, *trauma* or *family of origin issues* have left you struggling to:
 
 - Maintain healthy relationships at home and work.
 - Set healthy boundaries.
@@ -22,7 +22,7 @@ Instead *depression*, *anxiety* or *family of origin issues* have left you strug
 The right support can make all the difference as you work to change patterns and behavior.  
 
 
-.. bs-cta:: Schedule a *FREE* phone consultation
+.. bs-cta:: Schedule a *FREE* video consultation
    :href: #contact-me
 
 |
@@ -45,14 +45,14 @@ How to Begin
       :icon-class: bx bx-phone
       :href: #contact-me
 
-      *Click here* to schedule a free 10 minute phone call with me so we can discuss your therapy goals and decide if we
+      *Click here* to schedule a free 15 minute video consultation with me so we can discuss your therapy goals and decide if we
       want to work together.
 
    .. list-group-item:: Step 2. *Share*
       :icon-class: bx bx-donate-heart
 
-      Once you decide to move forward with therapy, we’ll schedule an initial 60 minute session where I can learn
-      more about you. Together we’ll create a plan to help you reach your goals.
+      We’ll next schedule an initial 60 minute session where I can learn
+      more about you. Together we’ll create a plan to help you reach your goals. Sessions are held in the Salt Lake City office and online.
 
    .. list-group-item:: Step 3. *Heal*
       :icon-class: bx bx-leaf
@@ -71,7 +71,7 @@ Services & Fees
       :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
-         :service: 10-minute Phone Consultation
+         :service: 15-minute Video Consultation
          :badge: Start Here
          :free:
          :btn-text: Get Started
@@ -86,21 +86,21 @@ Services & Fees
       :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
-         :service: 60-minute Initial Video Session
+         :service: 60-minute Initial Session
          :price: 125
          :class: py-auto
          :next-arrow-xs: bi bi-arrow-down-circle
          :next-arrow-sm: bi bi-arrow-down-left-circle
          :next-arrow-lg: bi bi-arrow-right-circle
 
-         We will get to know each other and identify your goals for therapy.
+         We will get to know each other and identify your goals for therapy, either in the Salt Lake City office or online.
 
    .. bs-col::
       :class: col-lg-3 col-sm-6 align-items d-flex
 
       .. bs-box::
          :service-pre: Subsequent
-         :service: 50-minute TeleHealth Therapy Sessions
+         :service: 50-minute Therapy Sessions
          :price: 125
          :per: session
          :class: py-auto
@@ -124,9 +124,9 @@ Services & Fees
    .. admonition:: Please Note
       :class: alert alert-info col-lg-5 mx-lg-auto col-md-12 mx-md-0
 
-      I do not bill insurance. (This actually benefits you.  Ask me for details!) Some insurance companies accept my services as an out-of-network benefit.
-      Contact your insurance company for procedures if you are interested in reimbursement.
-      Please let me know if you need a Superbill for reimbursement purposes.
+      I do not bill insurance. (This actually benefits you.  Ask me for details!) Many insurance companies accept my services as an out-of-network benefit. Your insurance company can clarify your benefits and their reimbursement procedures if you're interested in reimbursement. 
+      
+      
 
       For more information on why I don’t work with insurance and how this benefits YOU, see `this great explanation.
       <https://www.huppicounseling.com/servicesfees-1>`_
@@ -203,7 +203,7 @@ Approaches
 
       Your thoughts are not your boss.
       Develop a new relationship with and take control of your thoughts
-      as you learn to notice, detach from, and evaluate thoughts.
+      as you learn to notice, detach from, and evaluate them.
 
 
    .. bs-icon-box:: LI
@@ -225,7 +225,7 @@ Approaches
       response so you can move in goal-oriented ways.
 
 
-.. bs-cta:: Schedule A Call *Now*
+.. bs-cta:: Schedule A Consultation *Now*
    :href: #contact-me
 
 
@@ -243,7 +243,7 @@ About Jen
    Jen Mabey, CMHC
 
 
-I am licensed in the State of Utah as a Clinical Mental Health Counselor (CMHC). I graduated from the University of Utah with a Master’s Degree in Educational Psychology/Clinical Mental Health Counseling.
+I am licensed in the State of Utah (License # 11283706-6004) as a Clinical Mental Health Counselor (CMHC). I graduated from the University of Utah with a Master’s Degree in Educational Psychology/Clinical Mental Health Counseling.
 
 I am fascinated by research showing that when parents struggle with illness, addiction, or narcissism, or expect their children’s achievements to make them look good, their children often later choose careers in healthcare and other helping professions.  It turns out such family-of-origin experiences hone one’s ability to tune into what others expect and need, but often such talented caregivers haven’t learned to tune into what they themselves need.  I enjoy connecting with and supporting those in helping professions to build skills and insight, process painful experiences, and be better prepared to lead the life they desire.
 
@@ -262,7 +262,7 @@ Contact Me
 .. div::
    :class: text-center
 
-   Choose a date and time from the calendar below for your free 10-minute phone call.
+   Choose a date and time from the calendar below for your free 15-minute video consulation.
 
 .. raw:: html
    :file: calendly_snippet.html
