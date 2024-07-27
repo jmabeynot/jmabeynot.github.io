@@ -118,7 +118,6 @@ class MyDirective(Directive):
 
 
 class RowDirective(MyDirective):
-
     has_content = True
     option_spec = {"class": str}
 
@@ -135,7 +134,6 @@ class RowDirective(MyDirective):
 
 
 class ColDirective(MyDirective):
-
     has_content = True
     option_spec = {"class": str}
 
@@ -224,13 +222,17 @@ class IconBoxDirective(MyDirective):
         "subtitle": str,
         "icon-class": str,
         "col-class": str,
+        "alt": str,
     }
 
     def run(self):
         icon_box = bs_icon_box()
 
         if icon_class := self.options.get("icon-class"):
-            icon = bs_icon(CLASS=icon_class)
+            alt_params = {}
+            if alt_text := self.options.get("alt"):
+                alt_params = dict(ROLE="img", ALT=alt_text)
+            icon = bs_icon(CLASS=icon_class, **alt_params)
             icon_box.append(icon)
 
         if self.arguments:
@@ -261,7 +263,6 @@ class IconBoxDirective(MyDirective):
 
 
 class TaglineDirective(MyDirective):
-
     has_content = True
 
     def run(self):
@@ -308,7 +309,6 @@ def depart_div_node(self, node):
 
 
 class DivDirective(MyDirective):
-
     has_content = True
     optional_arguments = 1
     option_spec = {"class": str}
@@ -409,7 +409,6 @@ def depart_dolla_node(self, node):
 
 
 class BoxDirective(MyDirective):
-
     has_content = True
     option_spec = {
         "class": str,
@@ -420,6 +419,7 @@ class BoxDirective(MyDirective):
         "free": directives.flag,
         "price": directives.nonnegative_int,
         "per": str,
+        "alt": str,
         "btn-text": str,
         "btn-href": str,
         "next-arrow-xs": str,
@@ -434,17 +434,35 @@ class BoxDirective(MyDirective):
             box_class += " recommended"
         box = div(CLASS=box_class)
 
+        alt_params = {}
+        if alt_text := self.options.get("alt"):
+            alt_params = dict(ROLE="img", ALT=alt_text)
+
         if next_arrow_cls := self.options.get("next-arrow-xs", "").strip():
-            box.append(bs_icon(CLASS=f"box-next-arrow box-next-xs {next_arrow_cls}"))
+            box.append(
+                bs_icon(
+                    CLASS=f"box-next-arrow box-next-xs {next_arrow_cls}", **alt_params
+                )
+            )
 
         if next_arrow_sm_cls := self.options.get("next-arrow-sm", "").strip():
-            box.append(bs_icon(CLASS=f"box-next-arrow box-next-sm {next_arrow_sm_cls}"))
+            box.append(
+                bs_icon(
+                    CLASS=f"box-next-arrow box-next-sm {next_arrow_sm_cls}",
+                    **alt_params,
+                )
+            )
 
         if next_arrow_lg_cls := self.options.get("next-arrow-lg", "").strip():
-            box.append(bs_icon(CLASS=f"box-next-arrow box-next-lg {next_arrow_lg_cls}"))
+            box.append(
+                bs_icon(
+                    CLASS=f"box-next-arrow box-next-lg {next_arrow_lg_cls}",
+                    **alt_params,
+                )
+            )
 
         if "add-repeat-arrow" in self.options:
-            box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-repeat"))
+            box.append(bs_icon(CLASS="box-next-arrow bi bi-arrow-repeat", **alt_params))
 
         if badge_text := self.options.get("badge"):
             self._add_parsed_text(badge_text, box, classes=["recommended-badge"])
@@ -494,7 +512,6 @@ class BoxDirective(MyDirective):
 
 
 class ListGroupDirective(MyDirective):
-
     has_content = True
     option_spec = {"class": str}
 
@@ -510,12 +527,12 @@ class ListGroupDirective(MyDirective):
 
 # noinspection PyPep8Naming
 class ListGroupItemDirective(MyDirective):
-
     optional_arguments = 1
     has_content = True
     option_spec = {
         "icon-class": str,
         "href": str,
+        "alt": str,
     }
     final_argument_whitespace = True
 
@@ -524,7 +541,10 @@ class ListGroupItemDirective(MyDirective):
         children = []
 
         if icon_class := self.options.get("icon-class"):
-            icon = bs_icon(CLASS=icon_class)
+            alt_params = {}
+            if alt_text := self.options.get("alt"):
+                alt_params = dict(ROLE="img", ALT=alt_text)
+            icon = bs_icon(CLASS=icon_class, **alt_params)
             children.append(icon)
 
         if (content := self.content) or self.arguments:
@@ -559,13 +579,13 @@ class ListGroupItemDirective(MyDirective):
 
 
 class CarouselDirective(MyDirective):
-
     has_content = False
     option_spec = {
         "id": directives.class_option,
         "class": str,
         "image-dir": directives.path,
         "images": str,
+        "alt": str,
     }
 
     def run(self):
@@ -575,10 +595,18 @@ class CarouselDirective(MyDirective):
             raise ValueError("You must supply an image dir for a carousel")
         img_dir = Path(img_dir)
 
+        alt_param = {}
+        if alt_text := self.options.get("alt"):
+            alt_param = dict(ALT=alt_text)
+
         for i, img_src in enumerate(self.options.get("images", "").split()):
             item = div(CLASS=f"carousel-item{' active' if i == 0 else ''}")
             item.append(
-                nodes.image(CLASS="d-block rounded w-100", uri=f"{(img_dir / img_src)}")
+                nodes.image(
+                    CLASS="d-block rounded w-100",
+                    uri=f"{(img_dir / img_src)}",
+                    **alt_param,
+                )
             )
             carousel.append(item)
 
@@ -598,7 +626,6 @@ class CarouselDirective(MyDirective):
 
 
 class AccordianListDirective(MyDirective):
-
     has_content = True
 
     def run(self):
@@ -613,7 +640,6 @@ class AccordianListDirective(MyDirective):
 
 
 class AccordianItemDirective(MyDirective):
-
     required_arguments = 1
     final_argument_whitespace = True
     has_content = True
@@ -654,7 +680,6 @@ class AccordianItemDirective(MyDirective):
 
 
 class CTADirective(MyDirective):
-
     required_arguments = 1
     final_argument_whitespace = True
     option_spec = {

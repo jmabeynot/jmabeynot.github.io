@@ -8,11 +8,82 @@
 <!--TODO: Add metatags-->
 
 {%- block htmltitle %}
-<title>{{ project }}</title>
+<title>{{ project }}</title>{# <--- Don't change this, change the project variable in conf.py instead #}
 {%- endblock %}
 
 {%- block extrahead %}
 {{ super() }}
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mendmht.com/index.html" />
+<meta property="og:title" content="{{ project }}" />
+<meta property="og:description" content="Jen Mabey, CMHC, offers therapy options for healthcare providers and other caregivers in Salt Lake City. Schedule a free 15-minute video consultation today." />
+<meta property="og:image" content="https://mendmht.com/_static/img/logo.svg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://mendmht.com/index.html" />
+<meta property="twitter:title" content="{{ project }}" />
+<meta property="twitter:description" content="Jen Mabey, CMHC, offers therapy options for healthcare providers and other caregivers in Salt Lake City. Schedule a free 15-minute video consultation today." />
+<meta property="twitter:image" content="https://mendmht.com/_static/img/logo.svg" />
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Mend Mental Health Therapy",
+    "url": "https://www.mendmht.com/index.html",
+    "logo": "https://mendmht.com/_static/img/logo.svg",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Jen Mabey, CMHC"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "669 E Garfield Ave",
+      "addressLocality": "Salt Lake City",
+      "addressRegion": "UT",
+      "postalCode": "84105",
+      "addressCountry": "USA"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "telephone": "801-432-0233",
+      "areaServed": "Salt Lake City, UT",
+      "url": "https://mendmht.com/index.html"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/mend-mental-health-therapy/"
+    ]
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "headline": "You're good at helping others. It’s time to get good help for yourself!",
+    "mainContentOfPage": "Mend Mental Health Therapy is where you, who spend so much of your life focused on serving others, can focus on your own well-being. Making sure your needs are met will help you continue to serve others from a place of strength instead of depletion."
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Mend Mental Health Therapy",
+    "@id": "mendmht.com",
+    "URL": "https://www.mendmht.com/index.html",
+    "audience": {
+      "@type": "medicalAudience",
+      "audienceType": "This site is intended for healthcare professionals and other caregivers located in Utah area who may be seeking mental health counseling or therapy services"
+    }
+  }
+</script>
+
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,8 +124,8 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container">
-<!--        <h1>{{ project }}</h1>-->
-        <img class="mb-5" height="150px" src="_static/img/logo-dark.svg" style="max-width: 100%;" />
+        <h1 style="display: none;">{{ project }}</h1>
+        <img class="mb-5" height="150px" src="_static/img/logo-dark.svg" alt="Mend Mental Health Therapy Logo" style="max-width: 100%;" />
         {%- if theme_project_subtitle %}
         <h2>{{ theme_project_subtitle }}</h2>
         {%- endif %}

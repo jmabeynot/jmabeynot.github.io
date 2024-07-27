@@ -11,13 +11,12 @@ import sys
 
 sys.path.append(f"{Path('.').resolve()}")
 
-project = "Mend Mental Health Therapy"
+project = "Mend Mental Health Therapy | Counseling for Caregivers"
 copyright = "2022-Present, Jen Mabey"
 author = "Jen Mabey"
 
 html_theme_options = {
     "project_subtitle": "You're good at helping others. It’s time to get good help for yourself!",
-    # "catchphrase": "Live The Life You Choose Through Healing & Empowerment",
     "hero_button_text": "Get Started",
     "hero_href": "#how-to-begin",
     "author": "Jen Mabey, CMHC",
@@ -26,7 +25,7 @@ html_theme_options = {
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["my_custom_builder"]
+extensions = ["my_custom_builder", "sphinx_sitemap"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
@@ -35,6 +34,7 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_baseurl = "https://mendmht.com/"
 html_theme = "tempo"
 html_theme_path = ["."]
 html_static_path = ["_static"]

@@ -2,9 +2,8 @@ Home
 ----
 
 .. meta::
-   :description: Mend MHT provides many different therapy modalities, including EMDR, Mindful Self-Compassion,
-      Acceptance and Commitment Therapy (ACT), Lifespan Integration (LI), and Mind-Body Bridging. Schedule a free
-      15-minute video consultation to get started.
+   :description: Jen Mabey, CMHC, offers therapy options for healthcare providers and other caregivers in Salt Lake
+      City. Schedule a free 15-minute video consultation today.
 
 
 .. bs-carousel::
@@ -12,6 +11,7 @@ Home
    :class: float-end col-12 col-sm-4
    :image-dir: _static/img/
    :images: distressed-1.jpg distressed-2.jpg distressed-3.jpg distressed-4.jpg distressed-5.jpg distressed-6.jpg
+   :alt: Various images of health care professionals and other care givers in need of mental health support
 
 You are gifted at recognizing and nurturing the needs of others, but tend to let your own needs go by the wayside.
 
@@ -49,18 +49,21 @@ How to Begin
    .. list-group-item:: Step 1. *Connect*
       :icon-class: bx bx-phone
       :href: #contact-me
+      :alt: phone icon
 
       *Click here* to schedule a free 15 minute video consultation with me so we can discuss your therapy goals and
       decide if we want to work together.
 
    .. list-group-item:: Step 2. *Share*
       :icon-class: bx bx-donate-heart
+      :alt: sharing icon
 
       We’ll next schedule an initial 60 minute session where I can learn more about you. Together we’ll create a plan
       to help you reach your goals. Sessions are held in the Salt Lake City office and online.
 
    .. list-group-item:: Step 3. *Heal*
       :icon-class: bx bx-leaf
+      :alt: leaf icon
 
       We will meet weekly at first, and then space out sessions as you get closer to your goals.
 
@@ -83,6 +86,7 @@ Services & Fees
          :btn-href: #contact-me
          :recommended:
          :class: py-auto
+         :alt: Arrow icon to next step
          :next-arrow-xs: bi bi-arrow-down-circle
          :next-arrow-sm: bi bi-arrow-right-circle
          :next-arrow-lg: bi bi-arrow-right-circle
@@ -94,6 +98,7 @@ Services & Fees
          :service: 60-minute Initial Session
          :price: 125
          :class: py-auto
+         :alt: Arrow icon to next step
          :next-arrow-xs: bi bi-arrow-down-circle
          :next-arrow-sm: bi bi-arrow-down-left-circle
          :next-arrow-lg: bi bi-arrow-right-circle
@@ -110,6 +115,7 @@ Services & Fees
          :per: session
          :class: py-auto
          :add-repeat-arrow:
+         :alt: Repeat icon
 
          This is the kind of session we will have regularly.
 
@@ -173,6 +179,7 @@ Therapy Process
       :width: 100%
       :class: figure-img img-fluid rounded
       :figclass: figure col-6 col-md-4 col-lg-3 float-start
+      :alt: Patient participating in a free video consultation
 
    When it comes to therapy, there is no “one size fits all” approach.  I am trained in several therapeutic
    modalities, and we will work together to discover your best path forward.  As your partner in healing, I will be
@@ -189,6 +196,7 @@ Approaches
       :subtitle: Eye Movement Desensitization and Reprocessing
       :icon-class: bi bi-bullseye
       :col-class: align-items-stretch col-lg-4 col-md-6 mb-3 d-flex
+      :alt: Eye Movement Desensitization and Reprocessing (EMDR) icon
 
       Learn to use bilateral stimulation to overcome negative emotions
       and body sensations connected to past trauma so you can
@@ -198,6 +206,7 @@ Approaches
    .. bs-icon-box:: Mindful Self-Compassion
       :icon-class: bi bi-chat-heart
       :col-class: align-items-stretch col-lg-4 col-md-6 mb-3 d-flex
+      :alt: Mindful Self-Compassion icon
 
       Develop greater self-awareness and shift your relationship
       with yourself from harsh critic to encouraging friend.
@@ -207,6 +216,7 @@ Approaches
       :subtitle: Acceptance and Commitment Therapy
       :icon-class: bi bi-arrow-left-right
       :col-class: align-items-stretch col-lg-4 col-md-6 mb-3 d-flex
+      :alt: Acceptance and Commitment Therapy (ACT) icon
 
       Your thoughts are not your boss.
       Develop a new relationship with and take control of your thoughts
@@ -217,6 +227,7 @@ Approaches
       :subtitle: Lifespan Integration
       :icon-class: bi bi-map
       :col-class: align-items-stretch col-lg-4 col-md-6 mb-3 d-flex
+      :alt: Lifespan Integration icon
 
       Get a more current perspective on past traumatic experiences
       and develop a coherent sense of self
@@ -226,6 +237,7 @@ Approaches
    .. bs-icon-box:: Mind-Body Bridging
       :icon-class: bi bi-link
       :col-class: align-items-stretch col-lg-4 col-md-6 mb-3 d-flex
+      :alt: Mind-Body Bridging icon
 
       Engage your wisest self as you become more present
       in your body and calm down your “fight, flight or freeze”
@@ -246,6 +258,7 @@ About Jen
    :width: 100%
    :class: figure-img img-fluid rounded
    :figclass: figure col-lg-3 col-4 float-start
+   :alt: Portrait of Jen Mabey
 
    Jen Mabey, CMHC
 
@@ -285,6 +298,7 @@ Contact Me
    :width: 100%
    :class: figure-img img-fluid rounded
    :figclass: figure col-12
+   :alt: Picture of a diverse group of people representing the wide variety of clients that Jen Mabey serves
 
 
 .. toctree::
