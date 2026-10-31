@@ -96,7 +96,7 @@ Services & Fees
 
       .. bs-box::
          :service: 60-minute Initial Session
-         :price: 125
+         :price: 185
          :class: py-auto
          :alt: Arrow icon to next step
          :next-arrow-xs: bi bi-arrow-down-circle
@@ -111,7 +111,7 @@ Services & Fees
       .. bs-box::
          :service-pre: Subsequent
          :service: 50-minute Therapy Sessions
-         :price: 125
+         :price: 150
          :per: session
          :class: py-auto
          :add-repeat-arrow:
@@ -135,12 +135,11 @@ Services & Fees
    .. admonition:: Please Note
       :class: alert alert-info col-lg-5 mx-lg-auto col-md-12 mx-md-0
 
-      I do not bill insurance. (This actually benefits you.  Ask me for details!) Many insurance companies accept my
+      I do not bill insurance. Many insurance companies accept my
       services as an out-of-network benefit. Your insurance company can clarify your benefits and their reimbursement
       procedures if you're interested in reimbursement.
 
-      For more information on why I don’t work with insurance and how this benefits YOU, see `this great explanation.
-      <https://www.huppicounseling.com/servicesfees-1>`_
+      
 
 
    .. admonition:: Cancellation Fees
@@ -156,7 +155,7 @@ Services & Fees
 
       - All subsequent occasions
 
-        - Full $125 fee
+        - Full $150 fee
 
 
 .. bs-accordion::
