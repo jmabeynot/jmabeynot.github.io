@@ -11,12 +11,13 @@ jobs:
 
     steps:
       - name: Check out main branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
 
       - name: Install Python and Poetry
         uses: mmabey/action-setup-python@v0.3.1
         with:
           python-version: "3.10"
+          poetry-install: false
 
       - name: Set up poetry virtualenv and build pages
         env:
@@ -26,7 +27,7 @@ jobs:
             poetry run make html
             rm -rf build/doctrees build/html/{.buildinfo,good_faith_estimate.html,objects.inv,search.html,searchindex.js}
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: site_files
           path: build/html/
@@ -39,14 +40,14 @@ jobs:
 
     steps:
       - name: Check out public branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           ref: "public"
 
       - name: Remove old files
         run: git rm -rf _images _static index.html
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v8
         with:
           name: site_files
           path: .
